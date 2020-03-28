@@ -4,12 +4,12 @@ $('.circle').click(function () {
     let heightMax = $(window).height();
     let width = $(window).width();
     let height = $(window).height();
-    $('.circle').css({
-
+    $('.circle').animate({
         left: Math.floor( Math.random() * widthMax / 2), 
         top: Math.floor( Math.random() * heightMax / 2),
         width: Math.floor(Math.random() * width / 2),
         height: Math.floor(Math.random() * height / 2),
-        backgroundColor: "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")"
-    })
+    }).css({
+            backgroundColor: "rgb(" + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + "," + Math.floor(Math.random() * 256) + ")"
+    });
 })
